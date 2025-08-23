@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Metatech-Invoice-Generator/static/css/main.ca8e30f7.css",
-    "main.js": "/Metatech-Invoice-Generator/static/js/main.ccab8408.js",
+    "main.js": "/Metatech-Invoice-Generator/static/js/main.d3ebc38c.js",
     "static/js/977.1cf80ebd.chunk.js": "/Metatech-Invoice-Generator/static/js/977.1cf80ebd.chunk.js",
     "static/js/455.d4dc4d65.chunk.js": "/Metatech-Invoice-Generator/static/js/455.d4dc4d65.chunk.js",
     "static/js/453.b635b298.chunk.js": "/Metatech-Invoice-Generator/static/js/453.b635b298.chunk.js",
@@ -9,13 +9,13 @@
     "static/media/logo.svg": "/Metatech-Invoice-Generator/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Metatech-Invoice-Generator/index.html",
     "main.ca8e30f7.css.map": "/Metatech-Invoice-Generator/static/css/main.ca8e30f7.css.map",
-    "main.ccab8408.js.map": "/Metatech-Invoice-Generator/static/js/main.ccab8408.js.map",
+    "main.d3ebc38c.js.map": "/Metatech-Invoice-Generator/static/js/main.d3ebc38c.js.map",
     "977.1cf80ebd.chunk.js.map": "/Metatech-Invoice-Generator/static/js/977.1cf80ebd.chunk.js.map",
     "455.d4dc4d65.chunk.js.map": "/Metatech-Invoice-Generator/static/js/455.d4dc4d65.chunk.js.map",
     "453.b635b298.chunk.js.map": "/Metatech-Invoice-Generator/static/js/453.b635b298.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca8e30f7.css",
-    "static/js/main.ccab8408.js"
+    "static/js/main.d3ebc38c.js"
   ]
 }
