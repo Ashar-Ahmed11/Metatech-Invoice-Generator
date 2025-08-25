@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet-async'
 const Home = () => {
     const { pdfData, setPdfData } = useContext(AppContext)
     const initialValue = 0;
-    const TotalCost = pdfData.services.reduce(
+    const TotalCost = [...(pdfData?.services || [])].reduce(
         (accumulator, currentValue) => accumulator + Number(currentValue.cost),
         initialValue,
     );

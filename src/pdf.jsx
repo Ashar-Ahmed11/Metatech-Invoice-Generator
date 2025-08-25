@@ -70,12 +70,12 @@ function Pdf() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {[...(pdfData.services || []).map(({ description, cost }) =>
+                                {[...(pdfData?.services || []).map(({ description, cost }) =>
                                     <tr>
 
                                         <td>{description}</td>
 
-                                        <td >{pdfData?.currency == "USD" ? "$" : "PKR "}{Number(cost).toLocaleString()}</td>
+                                        <td >{pdfData?.currency == "USD" ? "$" : "PKR "}{Number(cost?cost:"0").toLocaleString()}</td>
                                     </tr>
                                 )]}
 
@@ -89,7 +89,7 @@ function Pdf() {
                             <div className='h-100 p-3 border border-light rounded-4 flex-column d-flex justify-content-center'>
                                 <div className="d-flex justify-content-between">
                                     <span className="text-light fw-bold">Sub Total</span>
-                                    <span className="text-light opacity-75">{pdfData?.currency == "USD" ? "$" : "PKR "}{pdfData?.total.toLocaleString()}</span>
+                                    <span className="text-light opacity-75">{pdfData?.currency == "USD" ? "$" : "PKR "}{pdfData?.total?.toLocaleString()}</span>
                                 </div>
                                 <div className="d-flex justify-content-between">
                                     <span className="text-light fw-bold">Tax</span>
@@ -97,7 +97,7 @@ function Pdf() {
                                 </div>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <span className="text-light fw-bold">Total</span>
-                                    <span className="text-light fw-bold h3">{pdfData?.currency == "USD" ? "$" : "PKR "}{pdfData?.total.toLocaleString()}</span>
+                                    <span className="text-light fw-bold h3">{pdfData?.currency == "USD" ? "$" : "PKR "}{pdfData?.total?.toLocaleString()}</span>
                                 </div>
                             </div>
                         </div>
@@ -106,6 +106,12 @@ function Pdf() {
                     <div>
                         <p className='text-light fw-bold'>Payment Method</p>
                         <p className="text-light opacity-75">Any form of convenient payment method is acceptable</p>
+                        {/* <p className="text-light opacity-75">Bank Details or Interac e-Transfer are available upon request</p> */}
+                    </div>
+                    <div>
+                        <p className='text-light fw-bold'>Contact Details</p>
+                        <p className="text-light"><span className="opacity-75">Website URL</span>: www.metatech-official.com</p>
+                        <p className="text-light"><span className="opacity-75">CEO Phone</span>: 0347-2698189</p>
                         {/* <p className="text-light opacity-75">Bank Details or Interac e-Transfer are available upon request</p> */}
                     </div>
                 </div>

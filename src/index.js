@@ -3,18 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { HashRouter } from 'react-router-dom/cjs/react-router-dom.min';
+import { HashRouter as Router } from "react-router-dom"
 import AppState from './components/context/appState';
 import { HelmetProvider } from 'react-helmet-async';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <HashRouter>
+  <Router>
     <HelmetProvider>
       <AppState>
         <App />
       </AppState>
     </HelmetProvider>
-  </HashRouter>
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function
